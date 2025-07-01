@@ -1,5 +1,5 @@
 
-import { MagnifyingGlass } from "lucide-react";
+import { Search } from "lucide-react";
 
 const Header = () => {
   return (
@@ -9,7 +9,7 @@ const Header = () => {
       </h2>
       <div className="flex w-12 items-center justify-end">
         <button className="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 bg-transparent text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 hover:bg-medium-green transition-colors">
-          <MagnifyingGlass className="w-6 h-6" />
+          <Search className="w-6 h-6" />
         </button>
       </div>
     </div>
