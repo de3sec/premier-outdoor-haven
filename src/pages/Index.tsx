@@ -1,6 +1,6 @@
 
 import Header from "@/components/Header";
-import Navigation from "@/components/Navigation";
+import NavigationMenu from "@/components/NavigationMenu";
 import HeroBanner from "@/components/HeroBanner";
 import ProductSection from "@/components/ProductSection";
 import TestimonialCard from "@/components/TestimonialCard";
@@ -112,9 +112,9 @@ const Index = () => {
 
   return (
     <div className="relative flex size-full min-h-screen flex-col bg-dark-green justify-between font-space-grotesk overflow-x-hidden">
-      <div>
+      <div className="pb-20 md:pb-0">
         <Header />
-        <Navigation />
+        <NavigationMenu />
         <HeroBanner />
         
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
@@ -146,10 +146,11 @@ const Index = () => {
         </div>
       </div>
       
-      <div>
-        <BottomNavigation />
+      <div className="hidden md:block">
         <div className="h-5 bg-[#1c261c]"></div>
       </div>
+      
+      <BottomNavigation />
     </div>
   );
 };
